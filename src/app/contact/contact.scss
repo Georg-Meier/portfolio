@@ -48,7 +48,7 @@ section {
 
                 input,
                 textarea {
-                    background-color: var(--dark);
+                    background-color: grey;
                     border: none;
                     @include font-karla($fs: 1.125rem, $fw: 400, $c: var(--white));
                     resize: none;

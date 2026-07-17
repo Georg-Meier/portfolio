@@ -68,7 +68,7 @@ section {
                     border: 1px solid var(--turquoise);
                     border-radius: 20px;
                     padding: 38px;
-                    background-color: var(--dark-green);
+                    background-color: grey;
                     @include font-karla($fs: 1.125rem, $fw: 400, $c: var(--light-grey));
                     width: 590px;
                     height: 300px;
