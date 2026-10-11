@@ -4,15 +4,11 @@
             
             <nav>
                 <ul>
-                    @if (currentLanguage() === 'en') {
-                    <li><a href="#app-about-me" (click)="scroll.scrollTo('app-about-me', $event)">About me</a></li>
-                    <li><a href="#skill-set" (click)="scroll.scrollTo('skill-set', $event)">Skills</a></li>
-                    <li><a href="#featured-projects" (click)="scroll.scrollTo('featured-projects', $event)">Projects</a></li>
-                    } @else {
+                   
                     <li><a href="#app-about-me" (click)="scroll.scrollTo('app-about-me', $event)">Über mich</a></li>
                     <li><a href="#skill-set" (click)="scroll.scrollTo('skill-set', $event)">Fähigkeiten</a></li>
                     <li><a href="#featured-projects" (click)="scroll.scrollTo('featured-projects', $event)">Projekte</a></li>
-                    }
+                    
                 </ul>
             </nav>
             <svg (click)="openNavDialog()" width="48" height="48" viewBox="0 0 48 48" fill="none"
@@ -28,28 +24,19 @@
                 </g>
             </svg>
         </div>
-        <a routerLink="/">
-            <img src="/assets/img/logo_kit/transparent_logo.png" alt="Logo">
-        </a>
     </div>
 </header>
 <dialog #navDialog>
     <div class="nav-dialog-wrapper">
         <nav>
             <ul>
-                @if (currentLanguage() === 'en') {
-                <li><a href="#app-about-me" (click)="closeNavDialog()" (click)="scroll.scrollTo('app-about-me', $event)">About me</a></li>
-                <li><a href="#skill-set" (click)="closeNavDialog()" (click)="scroll.scrollTo('skill-set', $event)">Skills</a></li>
-                <li><a href="#featured-projects" (click)="closeNavDialog()" (click)="scroll.scrollTo('featured-projects', $event)">Projects</a></li>
-                } @else {
+                
                 <li><a href="#app-about-me" (click)="closeNavDialog()" (click)="scroll.scrollTo('app-about-me', $event)">Über mich</a></li>
                 <li><a href="#skill-set" (click)="closeNavDialog()" (click)="scroll.scrollTo('skill-set', $event)">Fähigkeiten</a></li>
                 <li><a href="#featured-projects" (click)="closeNavDialog()" (click)="scroll.scrollTo('featured-projects', $event)">Projekte</a></li>
-                }
+                
             </ul>
         </nav>
-        <div (click)="toggleLanguage()" class="language-toggle" [class.german]="currentLanguage() === 'de'" role="img"
-            [attr.aria-label]="currentLanguage() === 'en' ? 'language selection english' : 'language selection german'">
-        </div>
+        
     </div>
 </dialog>

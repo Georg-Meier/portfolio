@@ -2,7 +2,7 @@
 
 header {
     @include dFlex();
-    @include font-fira-code($fs: 20px);
+    @include font-fira-code($fs: 20px, $c: var(--all-h2-color));
     height: 98px;
     position: absolute;
     top: 0;
@@ -10,7 +10,7 @@ header {
     right: 0;
     z-index: 1000;
 
-    background: grey;
+    background: white;
 
     .header-wrapper {
         @include dFlex($jc: space-between);
@@ -58,6 +58,7 @@ header {
                     position: relative;
 
                     a {
+                        color: var(--all-h2-color);
                         position: relative;
                         transition: all 0.3s ease;
 
@@ -146,6 +147,7 @@ dialog {
                     position: relative;
 
                     a {
+                        color: var(--all-h2-color);
                         position: relative;
                         transition: all 0.3s ease;
 
