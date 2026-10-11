@@ -15,6 +15,9 @@ body {
     --sb-track-color: var(--dark);
     --sb-thumb-color: var(--turquoise);
     --sb-size: 8px;
+
+    background-color: grey;
+
     position: relative;
     overflow-x: hidden;
 }
@@ -78,8 +81,8 @@ body::-webkit-scrollbar-thumb {
     --turquoise: #3DCFB6;
     --dark-turquoise: #267e6e;
     --turquoise-hover: rgba(61, 207, 182, 0.6);
-    --dark: #1C1C1C;
-    --dark-green: #08463B;
+    --dark: grey;
+    --dark-green:grey;
     --white: #FFFFFF;
     --light-grey: rgba(255, 255, 255, 0.8);
     --warn: rgba(236, 123, 123, 0.8);
