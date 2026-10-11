@@ -1,25 +1,19 @@
 <section>
     <div class="landing-page-wrapper">
-        @if (currentLanguage() === 'en') {
+    
         <h3>Webentwickler</h3>
-        } @else {
-        <h3>Full-Stack-Entwickler</h3>
-        }
+        
         <h1>Eugen Birich</h1>
         <div class="btn-area">
             <a class="btn" href="#featured-projects" role="button" (click)="scroll.scrollTo('featured-projects', $event)">
-                @if (currentLanguage() === 'en') {
-                <span>Check out my work</span>
-                } @else {
+            
                 <span>Schau dir meine Arbeit an</span>
-                }
+                
             </a>
             <a class="btn" href="#contact" role="button" (click)="scroll.scrollTo('contact', $event)">
-                @if (currentLanguage() === 'en') {
-                <span>Contact Me</span>
-                } @else {
+               
                 <span>Kontaktiere mich</span>
-                }
+                
             </a>
         </div>
         <div class="post-left-container">
@@ -34,31 +28,11 @@
                 <a class="mail-logo" href="mailto:main@birich.dev" target="_blank">
                     <img src="/assets/img/landing_page/mail_icon.svg" alt="Mail Logo">
                 </a>
-                <a href="https://github.com/b-rich-dev" target="_blank"><img src="/assets/img/landing_page/github.svg"
-                        alt="GitHub Logo"></a>
-                <a href="https://www.linkedin.com/in/eugen-birich-8586aa389" target="_blank"><img
-                        src="/assets/img/landing_page/linkedin.svg" alt="LinkedIn Logo"></a>
+                
             </div>
             <div class="postright"></div>
         </div>
-        <div class="beam-container">
-            <div class="beam">
-                @if (currentLanguage() === 'en') {
-                <span>Full-Stack Developer &nbsp;&nbsp;&#12539;&nbsp;&nbsp; Based in Gelnhausen
-                    &nbsp;&nbsp;&#12539;&nbsp;&nbsp; Open to work &nbsp;&nbsp;&#12539;&nbsp;&nbsp; Available for remote
-                    work &nbsp;&nbsp;&#12539;&nbsp;&nbsp; </span>
-                <span>Full-Stack Developer &nbsp;&nbsp;&#12539;&nbsp;&nbsp; Based in Gelnhausen
-                    &nbsp;&nbsp;&#12539;&nbsp;&nbsp; Open to work &nbsp;&nbsp;&#12539;&nbsp;&nbsp; Available for remote
-                    work &nbsp;&nbsp;&#12539;&nbsp;&nbsp; </span>
-                } @else {
-                <span>Full-Stack-Entwickler &nbsp;&nbsp;&#12539;&nbsp;&nbsp; Mit Sitz in Gelnhausen
-                    &nbsp;&nbsp;&#12539;&nbsp;&nbsp; Offen für neue Herausforderungen &nbsp;&nbsp;&#12539;&nbsp;&nbsp;
-                    Für Remote-Arbeit geeignet &nbsp;&nbsp;&#12539;&nbsp;&nbsp; </span>
-                <span>Full-Stack-Entwickler &nbsp;&nbsp;&#12539;&nbsp;&nbsp; Mit Sitz in Gelnhausen
-                    &nbsp;&nbsp;&#12539;&nbsp;&nbsp; Offen für neue Herausforderungen &nbsp;&nbsp;&#12539;&nbsp;&nbsp;
-                    Für Remote-Arbeit geeignet &nbsp;&nbsp;&#12539;&nbsp;&nbsp; </span>
-                }
-            </div>
+        
         </div>
-    </div>
+    
 </section>
