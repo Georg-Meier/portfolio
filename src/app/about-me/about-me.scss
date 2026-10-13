@@ -5,11 +5,22 @@ section {
     width: 100%;
 
     .about-me-wrapper {
-        @include dFlex($jc: space-between, $ai: unset, $g: 80px);
+        @include dFlex($fd: column, $ai: center, $g: 40px);
         padding: 152px 80px 128px 80px;
         width: 100%;
         height: 100%;
         max-width: 1920px;
+
+        .about-me-heading {
+            width: 100%;
+            text-align: center;
+
+            h1 {@include font-karla($fs: 4rem,$fw: 700,$c: var(--all-h1-color));}
+}
+
+        .about-me-content {
+            @include dFlex($jc: space-between, $ai: flex-start, $g: 80px);width: 100%;
+
 
         .profile-picture-container {
             position: relative;
@@ -47,25 +58,26 @@ section {
             }
         }
 
+
+
         .profile-info-container {
             @include dFlex($ai: flex-start, $fd: column, $g: 20px);
             padding-top: 80px;
 
-            h4 {
-                @include font-karla($fs: 1.5rem, $fw: 700, $c: var(--turquoise));
-            }
+            h1 {@include font-karla($fs: 4rem, $fw: 700, $c: var(--all-h1-color));}
+
+            h2 {color: var(--all-h1-color);}
+
+            h4 {@include font-karla($fs: 1.5rem, $fw: 700, $c: var(--all-h4-color));}
 
             .profile-info {
-                border: var(--turquoise) solid 1px;
+                border: var(--all-h1-color) solid 1px;
                 border-radius: 30px;
-                background-color: grey;
+                background-color: white;
                 padding: 36px;
                 max-width: 568px;
 
-                p {
-                    @include font-karla($fs: 1.125rem, $c: var(--white));
-                    padding-bottom: 20px;
-                }
+                p {@include font-karla($fs: 1.125rem, $c: var(--all-p-color));padding-bottom: 20px;}
 
                 div {
                     display: grid;
@@ -80,7 +92,7 @@ section {
                     }
 
                     p {
-                        color: var(--light-grey);
+                        color: var(--all-p-color);
 
                         &:hover {
                             color: var(--white);
@@ -91,12 +103,17 @@ section {
         }
     }
 }
+}
+
 
 @media (max-width: 1024px),
 (pointer: coarse) {
     section {
         .about-me-wrapper {
-            @include dFlex($fd: column, $jc: center, $ai: center, $g: 0px);
+            @include dFlex($fd: column, $ai: center, $g: 40px);
+
+          .about-me-content {
+                @include dFlex($fd: column, $ai: center, $g: 40px);
 
             .profile-info-container {
                 .profile-info {
@@ -110,6 +127,7 @@ section {
         }
     }
 }
+}
 
 @media (max-width: 768px),
 (pointer: coarse) {
@@ -117,6 +135,7 @@ section {
         .about-me-wrapper {
             padding: 80px 24px 56px 24px;
 
+            .about-me-content {
             .profile-picture-container {
                 .profile-picture {
                     &:hover {
@@ -138,12 +157,13 @@ section {
             .profile-info-container {
                 .profile-info {
                     p {
-                        @include font-karla($fs: 1rem, $c: var(--white));
+                        @include font-karla($fs: 1rem, $c: var(--all-p-color));
                     }
                 }
             }
         }
     }
+}
 }
 
 @media (max-width: 480px),
@@ -152,6 +172,7 @@ section {
         .about-me-wrapper {
             padding: 80px 16px 56px 16px;
 
+            .about-me-content {
             .profile-picture-container {
                 .profile-picture {
                     &:hover {
@@ -172,11 +193,13 @@ section {
         }
     }
 }
+}
 
 @media (max-width: 380px),
 (pointer: coarse) {
     section {
         .about-me-wrapper {
+            .about-me-content {
             .profile-info-container {
                 .profile-info {
                     padding: 16px;
@@ -204,4 +227,5 @@ section {
             }
         }
     }
+}
 }

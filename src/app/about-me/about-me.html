@@ -1,47 +1,20 @@
 <section>
     <div class="about-me-wrapper">
-        <div class="profile-picture-container">
-            <img class="bg-decor" src="/assets/img/about_me/picture_background.svg" alt="Striped background">
-            <img class="profile-picture" src="/assets/img/about_me/profile.jpg" alt="Profile Picture" />
+
+        <div class="about-me-heading">
+            <h1>Wir sind</h1>
         </div>
-        <div class="profile-info-container">
-            @if (currentLanguage() === 'en') {
-            <h4>Wir sind</h4>
-            <div class="profile-info">
-                <h2>About <Menu></Menu></h2>
-                <p>
-                    As a certified Full-Stack Developer, I build modern, high-performance web applications using Angular
-                    and TypeScript on the frontend, as well as Python, Django, and Django REST Framework on the backend.
-                    <br>
-                    I design scalable APIs and connect frontend and backend into efficient, end-to-end solutions.
-                    <br>
-                    <br>
-                    My focus is on clean architecture, maintainable code, and developing user-centered applications in
-                    agile environments.
-                </p>
-                <div>
-                    <img src="/assets/img/about_me/pin_icon.svg" alt="Map Pin Icon">
-                    <p>
-                        Based in Gelnhausen, near Frankfurt.
-                        I enjoy working remotely but I’m also open to commuting up to 30 km to the office.
-                    </p>
-                    <img src="/assets/img/about_me/brain_icon.svg" alt="Brain Icon">
-                    <p>
-                        Continuous learning and staying up to date with new technologies are an integral part of my
-                        workflow.
-                    </p>
-                    <img src="/assets/img/about_me/check_icon.svg" alt="Check Icon">
-                    <p>
-                        My work focuses on analytical, structured, and solution-oriented approaches.
-                        I place particular emphasis on sustainable solutions and continuous improvement –
-                        both technically and within the team.
-                    </p>
-                </div>
+
+        <div class="about-me-content">
+
+            <div class="profile-picture-container">
+                <img class="bg-decor" src="/assets/img/about_me/picture_background.svg" alt="Striped background">
+                <img class="profile-picture" src="/assets/img/about_me/profile.jpg" alt="Profile Picture" />
             </div>
-            } @else {
-            <h4>Wer ich bin</h4>
-            <div class="profile-info">
-                <h2>Über mich</h2>
+
+            <div class="profile-info-container">
+               <div class="profile-info">
+                <h2>Über uns</h2>
                 <p>
                     Als zertifizierter Full-Stack-Entwickler entwickle ich moderne,
                     performante Webanwendungen mit Angular und TypeScript im Frontend sowie Python,
@@ -73,7 +46,8 @@
                     </p>
                 </div>
             </div>
-            }
+        </div>
         </div>
     </div>
+    
 </section>
